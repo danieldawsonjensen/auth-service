@@ -104,3 +104,7 @@
 /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/obj/Debug/net7.0/auth-service.pdb
 /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/obj/Debug/net7.0/auth-service.genruntimeconfig.cache
 /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/obj/Debug/net7.0/ref/auth-service.dll
+/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.config
+/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.dll
+/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.Extensions.Logging.dll
+/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.Web.AspNetCore.dll

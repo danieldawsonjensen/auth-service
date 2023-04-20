@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{642AA79F-CEBE-42FC-9CDD-6268EBF029DE}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.auth-service PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NLog.config">
     <Files>
       <File FileName="Controllers/AuthController.cs" />
       <File FileName="Controllers/TestController.cs" />
-      <File FileName="Program.cs" Line="15" Column="6" />
+      <File FileName="Program.cs" />
+      <File FileName="Model/UserRepository.cs" />
+      <File FileName="docker-compose.yml" />
+      <File FileName="Model/User.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="NLog.config" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,14 +17,19 @@
             <Node name="auth-service" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Model" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="NLog.config" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.auth-service PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
