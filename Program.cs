@@ -68,7 +68,7 @@ app.MapControllers();
 app.Run();
 
 }
-catch (Exception ex) //Try catch finally = M10.01 opgave B step 3+4
+catch (Exception ex) //Try, catch, finally = M10.01 opgave B step 3+4
 {
     logger.Error(ex, "Stopped program because of exception");
     throw;
