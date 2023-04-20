@@ -34,7 +34,9 @@ public class AuthController : ControllerBase
         var hostName = System.Net.Dns.GetHostName();
         var ips = System.Net.Dns.GetHostAddresses(hostName);
         var _ipaddr = ips.First().MapToIPv4().ToString();
-        _logger.LogInformation(1, $"Taxabooking responding from {_ipaddr}"); //Step C1 M10.01 - Tilføler præcist tidspunkt man har dotnet run.
+        _logger.LogInformation(1, $"Taxabooking responding from {_ipaddr}"); //Step C1 M10.01 - Tilføjer præcist tidspunkt man har dotnet run.
+
+        _logger.LogInformation("Hallo sker der noget?");
 
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Secret"]));
 

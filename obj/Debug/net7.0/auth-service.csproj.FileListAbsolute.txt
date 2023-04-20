@@ -108,3 +108,4 @@
 /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.dll
 /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.Extensions.Logging.dll
 /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.Web.AspNetCore.dll
+/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.Loki.dll

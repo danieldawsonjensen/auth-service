@@ -4,3 +4,27 @@
 2023-04-20 14:01:10.9683|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2023-04-20 14:01:10.9683|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service
 2023-04-20 14:01:19.8211|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 14:08:49.8655|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/Mads-Emil/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 14:08:49.9083|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 14:08:49.9083|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 14:08:49.9091|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 14:08:49.9091|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service
+2023-04-20 14:10:45.1873|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 14:38:02.9662|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/Mads-Emil/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 14:38:03.0007|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 14:38:03.0012|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 14:38:03.0012|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 14:38:03.0012|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service
+2023-04-20 15:18:03.0905|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 15:18:07.4924|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/Mads-Emil/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 15:18:07.5212|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 15:18:07.5212|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 15:18:07.5220|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 15:18:07.5220|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service
+2023-04-20 15:30:40.0117|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 15:30:45.0624|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/Mads-Emil/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 15:30:45.0898|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 15:30:45.0903|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 15:30:45.0903|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 15:30:45.0903|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service
+2023-04-20 15:33:11.2413|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
