@@ -203,3 +203,59 @@ File name: 'NLog.Loki, Culture=neutral, PublicKeyToken=null'
    at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
    at NLog.Loki.HttpLokiTransport.WriteLogEventsAsync(IEnumerable`1 lokiEvents)
 2023-04-20 15:33:11.3242 Info Logger has been closed down.
+2023-04-20 15:41:56.4189 Info Message Template Auto Format enabled
+2023-04-20 15:41:56.4410 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-20 15:41:56.4414 Info Loading assembly: NLog.Loki
+2023-04-20 15:41:56.4504 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-04-20 15:41:56.4504 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2023-04-20 15:41:56.4675 Info Registered target NLog.Loki.LokiTarget(Name=loki)
+2023-04-20 15:41:56.4722 Info Validating config: TargetNames=logconsole, logfile, loki, ConfigItems=47, FilePath=/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.config
+2023-04-20 15:41:56.5699 Info Validating config: TargetNames=logconsole, logfile, loki, ConfigItems=47, FilePath=/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.config
+2023-04-20 15:41:57.2365 Warn lokiTarget(Name=loki): WriteAsyncTask failed on completion. Sleep 250 ms Exception: System.Net.Http.HttpRequestException: nodename nor servname provided, or not known (loki:3100)
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NLog.Loki.HttpLokiTransport.WriteLogEventsAsync(IEnumerable`1 lokiEvents)
+2023-04-20 15:45:45.1909 Info Shutdown() called. Logger closing...
+2023-04-20 15:45:45.1906 Warn lokiTarget(Name=loki): WriteAsyncTask failed on completion. Sleep 250 ms Exception: System.Net.Http.HttpRequestException: nodename nor servname provided, or not known (loki:3100)
+ ---> System.Net.Sockets.SocketException (0xFFFDFFFF): nodename nor servname provided, or not known
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NLog.Loki.HttpLokiTransport.WriteLogEventsAsync(IEnumerable`1 lokiEvents)
+2023-04-20 15:45:45.1928 Info Closing old configuration.
+2023-04-20 15:45:45.1993 Info Logger has been closed down.
+2023-04-20 15:45:46.8425 Info Message Template Auto Format enabled
+2023-04-20 15:45:46.8639 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-20 15:45:46.8639 Info Loading assembly: NLog.Loki
+2023-04-20 15:45:46.8731 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-04-20 15:45:46.8731 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2023-04-20 15:45:46.8903 Info Registered target NLog.Loki.LokiTarget(Name=loki)
+2023-04-20 15:45:46.8948 Info Validating config: TargetNames=logconsole, logfile, loki, ConfigItems=47, FilePath=/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.config
+2023-04-20 15:45:47.0291 Info Validating config: TargetNames=logconsole, logfile, loki, ConfigItems=47, FilePath=/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.config
+2023-04-20 15:50:09.0795 Info Shutdown() called. Logger closing...
+2023-04-20 15:50:09.0799 Info Closing old configuration.
+2023-04-20 15:50:09.0843 Info Logger has been closed down.
