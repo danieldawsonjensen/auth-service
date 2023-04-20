@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{642AA79F-CEBE-42FC-9CDD-6268EBF029DE}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.auth-service PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Controllers/AuthController.cs" Line="54" Column="6" />
-      <File FileName="Model/LoginModel.cs" Line="2" Column="1" />
-      <File FileName="Controllers/TestController.cs" Line="11" Column="1" />
+      <File FileName="Controllers/AuthController.cs" />
+      <File FileName="Controllers/TestController.cs" />
       <File FileName="Program.cs" Line="15" Column="6" />
     </Files>
     <Pads>
@@ -20,11 +23,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.auth-service PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

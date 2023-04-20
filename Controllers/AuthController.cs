@@ -30,11 +30,9 @@ public class AuthController : ControllerBase
 
     private string GenerateJwtToken(string username)
     {
-        var securityKey =
-        new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Secret"]));
+        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Secret"]));
 
-        var credentials =
-        new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
         var claims = new[]
         {
@@ -53,9 +51,9 @@ public class AuthController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] User user) // her skal hentes bruger fra mongo
+    public async Task<IActionResult> Login([FromBody] User? user) // her skal hentes bruger fra mongo
     {
-        var loginUser = await _userRepository.FindUserByUsernameAndPassword(user.Username, user.Password); // henter bruger
+        var loginUser = await _userRepository.FindUserByUsernameAndPassword(user.MongoId, user.Username, user.Password); // henter bruger
 
         if (user == null)
         {
