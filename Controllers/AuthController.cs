@@ -30,6 +30,12 @@ public class AuthController : ControllerBase
 
     private string GenerateJwtToken(string username)
     {
+
+        var hostName = System.Net.Dns.GetHostName();
+        var ips = System.Net.Dns.GetHostAddresses(hostName);
+        var _ipaddr = ips.First().MapToIPv4().ToString();
+        _logger.LogInformation(1, $"Taxabooking responding from {_ipaddr}"); //Step C1 M10.01 - Tilføler præcist tidspunkt man har dotnet run.
+
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Secret"]));
 
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
