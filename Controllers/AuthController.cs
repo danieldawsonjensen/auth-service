@@ -57,7 +57,7 @@ public class AuthController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] User? user) // her skal hentes bruger fra mongo
+    public async Task<IActionResult> Login([FromBody] User user) // her skal hentes bruger fra mongo
     {
         var loginUser = await _userRepository.FindUserByUsernameAndPassword(user.MongoId, user.Username, user.Password); // henter bruger
 
