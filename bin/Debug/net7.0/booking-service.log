@@ -40,3 +40,73 @@
 2023-04-20 15:45:47.0849|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2023-04-20 15:45:47.0849|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service
 2023-04-20 15:50:09.0485|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 16:00:40.9468|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/daddel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 16:00:40.9758|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 16:00:40.9758|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 16:00:40.9764|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 16:00:40.9764|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service
+2023-04-20 16:01:02.9471|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 16:01:09.0152|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/daddel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 16:01:09.0393|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 16:01:09.0398|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 16:01:09.0398|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 16:01:09.0398|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service
+2023-04-20 16:01:29.5457|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5087/auth/login application/json 63
+2023-04-20 16:01:29.5640|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2023-04-20 16:01:29.5795|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Controllers.AuthController.Login (auth-service)'
+2023-04-20 16:01:29.5922|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Model.User) on controller Controllers.AuthController (auth-service).
+2023-04-20 16:01:29.9070|INFO|Controllers.AuthController|Taxabooking responding from 0.0.0.1
+2023-04-20 16:01:29.9128|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Controllers.AuthController.Login (auth-service) in 317.679ms
+2023-04-20 16:01:29.9139|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Controllers.AuthController.Login (auth-service)'
+2023-04-20 16:01:29.9157|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Controllers.AuthController.GenerateJwtToken(String username) in /Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service/Controllers/AuthController.cs:line 39
+   at Controllers.AuthController.Login(User user) in /Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service/Controllers/AuthController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-20 16:01:29.9283|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5087/auth/login application/json 63 - 500 - text/plain;+charset=utf-8 383.6979ms
+2023-04-20 16:01:38.3650|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 16:01:52.2583|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/daddel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 16:01:52.2846|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 16:01:52.2846|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 16:01:52.2846|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 16:01:52.2853|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service
+2023-04-20 16:01:55.9251|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5087/auth/login application/json 63
+2023-04-20 16:01:55.9430|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2023-04-20 16:01:55.9537|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Controllers.AuthController.Login (auth-service)'
+2023-04-20 16:01:55.9620|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Model.User) on controller Controllers.AuthController (auth-service).
+2023-04-20 16:01:56.1043|INFO|Controllers.AuthController|Taxabooking responding from 0.0.0.1
+2023-04-20 16:01:56.1305|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-20 16:01:56.1329|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Controllers.AuthController.Login (auth-service) in 170.104ms
+2023-04-20 16:01:56.1329|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Controllers.AuthController.Login (auth-service)'
+2023-04-20 16:01:56.1340|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5087/auth/login application/json 63 - 200 - application/json;+charset=utf-8 209.9321ms
+2023-04-20 16:09:00.4895|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-04-20 16:09:01.9082|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/daddel/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-04-20 16:09:01.9348|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5087
+2023-04-20 16:09:01.9348|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-04-20 16:09:01.9354|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-04-20 16:09:01.9354|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service
+2023-04-20 16:09:09.7181|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5087/auth/login application/json 63
+2023-04-20 16:09:09.7371|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2023-04-20 16:09:09.7482|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Controllers.AuthController.Login (auth-service)'
+2023-04-20 16:09:09.7582|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Model.User) on controller Controllers.AuthController (auth-service).
+2023-04-20 16:09:10.0691|INFO|Controllers.AuthController|Taxabooking responding from 0.0.0.1
+2023-04-20 16:09:10.1310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-20 16:09:10.1351|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Controllers.AuthController.Login (auth-service) in 375.9597ms
+2023-04-20 16:09:10.1351|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Controllers.AuthController.Login (auth-service)'
+2023-04-20 16:09:10.1366|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5087/auth/login application/json 63 - 200 - application/json;+charset=utf-8 419.3890ms
+2023-04-20 16:12:50.9505|INFO|Microsoft.Hosting.Lifetime|Application is shutting down...

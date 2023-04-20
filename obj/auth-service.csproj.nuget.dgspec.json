@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/auth-service.csproj": {}
+    "/Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service/auth-service.csproj": {}
   },
   "projects": {
-    "/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/auth-service.csproj": {
+    "/Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service/auth-service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/auth-service.csproj",
+        "projectUniqueName": "/Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service/auth-service.csproj",
         "projectName": "auth-service",
-        "projectPath": "/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/auth-service.csproj",
-        "packagesPath": "/Users/Mads-Emil/.nuget/packages/",
-        "outputPath": "/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/obj/",
+        "projectPath": "/Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service/auth-service.csproj",
+        "packagesPath": "/Users/daddel/.nuget/packages/",
+        "outputPath": "/Users/daddel/Documents/Skole/4sem/infra/fleet-management/auth-service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/Mads-Emil/.nuget/NuGet/NuGet.Config"
+          "/Users/daddel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

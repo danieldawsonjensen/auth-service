@@ -1,14 +1,19 @@
 ﻿<Properties StartupConfiguration="{642AA79F-CEBE-42FC-9CDD-6268EBF029DE}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NLog.config">
+  <MonoDevelop.Ide.ItemProperties.auth-service PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AuthController.cs">
     <Files>
-      <File FileName="Controllers/AuthController.cs" />
+      <File FileName="Controllers/AuthController.cs" Line="68" Column="1" />
       <File FileName="Controllers/TestController.cs" />
       <File FileName="Program.cs" />
-      <File FileName="Model/UserRepository.cs" />
-      <File FileName="docker-compose.yml" />
-      <File FileName="Model/User.cs" />
+      <File FileName="Model/UserRepository.cs" Line="21" Column="1" />
+      <File FileName="Model/User.cs" Line="10" Column="1" />
       <File FileName="appsettings.json" />
       <File FileName="NLog.config" Line="16" Column="1" />
+      <File FileName="Monitor/docker-compose.yml" Line="12" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,19 +22,14 @@
             <Node name="auth-service" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Model" expanded="True" />
+              <Node name="Monitor" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="NLog.config" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.auth-service PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>
