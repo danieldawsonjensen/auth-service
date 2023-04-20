@@ -1,0 +1,25 @@
+2023-04-20 14:01:10.6992 Info Message Template Auto Format enabled
+2023-04-20 14:01:10.7208 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-20 14:01:10.7211 Info Loading assembly: NLog.Loki
+2023-04-20 14:01:10.7222 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Loki
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Loki, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+
+File name: 'NLog.Loki, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2023-04-20 14:01:10.7332 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-04-20 14:01:10.7332 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2023-04-20 14:01:10.7332 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Failed to create Target of type: loki
+ ---> System.ArgumentException: Target type-alias is unknown: 'loki'
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Config.LoggingConfigurationParser.FactoryCreateInstance[T](String classType, INamedItemFactory`2 factory)
+   --- End of inner exception stack trace ---
+2023-04-20 14:01:10.7351 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'loki' not found for logging rule: *.
+2023-04-20 14:01:10.7394 Info Validating config: TargetNames=logconsole, logfile, ConfigItems=23, FilePath=/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.config
+2023-04-20 14:01:10.8945 Info Validating config: TargetNames=logconsole, logfile, ConfigItems=23, FilePath=/Users/Mads-Emil/Desktop/Fjerde semester/IT Arkitektur og infrastruktur/Workshopprojekt/auth-service/bin/Debug/net7.0/NLog.config
+2023-04-20 14:01:19.8432 Info Shutdown() called. Logger closing...
+2023-04-20 14:01:19.8432 Info Closing old configuration.
+2023-04-20 14:01:19.8481 Info Logger has been closed down.
